@@ -23,7 +23,6 @@ public class HomeController {
 	
 	@RequestMapping("home")
 	public String homePage(Model model) {
-		System.out.println("-------------JSP");
 		model.addAttribute("employee", new Employee());
 		return "home";
 	}
